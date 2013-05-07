@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Travail Collaboratif</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/one-mozilla.css" id="theme">
+
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+      <div class="moztnLogo"></div>
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<style>
+						#collabo{
+						margin-top:8%;
+						}
+					</style>
+					<h2><i><strong>Travail Collaboratif</strong></i></h2>
+					<img id="collabo" width="510" height="460" src="img/travail-collaboratif.jpg">
+				</section>
+
+				<section>
+					<style>#aide{margin-top:5%}</style>
+					<p><i>C’est une activité coordonnée entre plusieurs personnes qui interagissent dans un but commun <strong>MAIS</strong> se partagent les tâches</i></p>
+					<img id="aide" src="img/aide.jpg">
+				</section>
+					<section>
+						<h2>Web 2.0</h2>
+						<h3>Internet, Tout y est pour apprendre</h3>
+						
+							<img width="678" height="438" src="img/tout.jpg" alt="Up arrow">
+						
+					</section>
+					<section>
+						<h2>Etherpad ou Framapad</h2>
+						<img id="pad" width="90%" height="90%" src="img/etherpad.jpg">
+					</section>
+
+					<section>
+						<h2>GitHub</h2>
+						<p>Versionnez votre code et document</p>
+						<img width="85%" height="85%" src="img/git.jpg">
+					</section>
+
+					<section>
+						<h2>social bookmarking</h2>
+						<p> => indexer des ressources dans un espace en ligne</p>
+						<a href="https://www.diigo.com/education">
+							<img width="480" height="300" src="img/diigo.png" alt="Unicorn">
+						</a>
+					</section>
+
+
+				<section>
+					<h2>MOOC</h2>
+					<img src="img/mooc.jpg">
+				</section>
+
+				<section>
+					<h3>il est temps de passer a l'action</h3>
+					<img src="img/evolution.jpg">
+				</section>
+
+				<section>
+					<h2>Question?</h2>
+					<img src="img/question.png">
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
